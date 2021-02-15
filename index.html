@@ -10,10 +10,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
             integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-       
+
         <title>U06</title>
     </head>
 
@@ -23,40 +23,82 @@
             <h1 class="font-bold text-4xl  mt-10">
                 Welcome to U06, Trello Application Clone!
             </h1>
-            <p class="mt-5 text-2xl">
-                Here you can interact with the items below, such as dragging and dropping, clicking for more info, and deleting and adding items. This was created using the jQuery UI library
-            </p>
+            <h3 class="mt-5 text-2xl">
+                Here you can interact with the items below, such as dragging and dropping, clicking for more info, and
+                deleting and adding items. This was created using the jQuery UI library
+                <div class="spoiler cursor-pointer flex justify-center mt-5 text-sm">
+                    <p>Spoiler</p><img src="assets/plus.png" class="ml-2">
+                </div>
+                <p class="spoiler-text text-sm hidden">There is no backend so you can't actually delete and add ;) </p>
+            </h3>
         </header>
+
         <div class="container mt-20 grid grid-cols-3 md\:grid-cols-1">
-        <div class="todo-table">
-            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
-                Todo
-            </p>
 
-            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
-                <img class="float-right mr-4" src="/assets/plus.png"/>
-                <p>Test</p>
+            <div id="todo" class="todo-table">
+
+                <h3 id="todo-h3" class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                    Todo
+                </h3>
+
+                <div class="draggable py-6 pl-2 mx-2 mb-4">
+                    <img class="plus1" src="/assets/plus.png" />
+                    <h3 class="title">Do more cardio workout</h3>
+                    <p class="item-info1 border-black border-t-2 mt-4">I won't survive the apocalypse with my current
+                        cardio</p>
+                </div>
+
+                <div class="draggable py-6 pl-2 mx-2 mb-4">
+                    <img class="plus2" src="/assets/plus.png" />
+                    <h3>Find a LIA workplace</h3>
+                    <p class="item-info2 border-black border-2 mt-4">Please hire me, Mr. Chas Academy</p>
+                </div>
+
             </div>
-        </div>
-        <div class="todo-table">
-            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
-                In Progress
-            </p>
-            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
-                Test
+            
+            <div id="doing" class="todo-table">
+
+                <h3 id="doing-h3" class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                    In Progress
+                </h3>
+
+                <div class="draggable py-6 pl-2 mx-2">
+                    <img class="plus3" src="/assets/plus.png" />
+                    <h3>Test</h3>
+                    <p class="item-info3 border-black border-t-2 mt-4">Yes, this is a test item, nothing to see here</p>
+                </div>
+
+                <div class="draggable py-6 pl-2 mx-2">
+                    <img class="plus4" src="/assets/plus.png" />
+                    <h3>Repair the bike</h3>
+                    <p class="item-info4 border-black border-t-2 mt-4">Gotta do your part for the environment's sake</p>
+                </div>
+
+                <div class="draggable py-6 pl-2 mx-2">
+                    <img class="plus5" src="/assets/plus.png" />
+                    <h3>Take the dog for a walk</h3>
+                    <p class="item-info5 border-black border-t-2 mt-4">Wait, how am I coding while walking the dog?</p>
+                </div>
+
             </div>
-        </div>
-        <div class="todo-table">
-            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
-                Done
-            </p>
-            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
-                Test
+
+            <div id="done" class="todo-table">
+
+                <h3 id="todo-h3" class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                    Done
+                </h3>
+
+                <div class="draggable py-6 pl-2 mx-2">
+                    <img class="plus6" src="/assets/plus.png" />
+                    <h3>Finish U06</h3>
+                    <p class="item-info6 border-black border-t-2 mt-4">Please give me good grade</p>
+                </div>
+
             </div>
-        </div>
+
         </div>
 
-        
+
         <script src="/js/script.js"></script>
     </body>
 
