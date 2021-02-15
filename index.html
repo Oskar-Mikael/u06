@@ -9,6 +9,11 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+       
         <title>U06</title>
     </head>
 
@@ -27,24 +32,32 @@
             <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
                 Todo
             </p>
+
+            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
+                <img class="float-right mr-4" src="/assets/plus.png"/>
+                <p>Test</p>
+            </div>
         </div>
         <div class="todo-table">
             <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
                 In Progress
             </p>
+            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
+                Test
+            </div>
         </div>
         <div class="todo-table">
             <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
                 Done
             </p>
+            <div class="draggable py-6 pl-2 bg-yellow-200 mx-2">
+                Test
+            </div>
         </div>
         </div>
 
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script type="script/js" src="js/script.js"></script>
+        
+        <script src="/js/script.js"></script>
     </body>
 
 </html>
