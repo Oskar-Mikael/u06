@@ -1,0 +1,14 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    max-width: 1140px!important;
+    margin: 0 auto;
+}
+
+.todo-table {
+    min-height: 30rem;
+    background-color: rgb(214, 214, 214);
+    max-width: 20rem;
+}

@@ -7,10 +7,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
         <title>U06</title>
     </head>
 
     <body>
+
+        <header class="container text-center">
+            <h1 class="font-bold text-4xl  mt-10">
+                Welcome to U06, Trello Application Clone!
+            </h1>
+            <p class="mt-5 text-2xl">
+                Here you can interact with the items below, such as dragging and dropping, clicking for more info, and deleting and adding items. This was created using the jQuery UI library
+            </p>
+        </header>
+        <div class="container mt-20 grid grid-cols-3 md\:grid-cols-1">
+        <div class="todo-table">
+            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                Todo
+            </p>
+        </div>
+        <div class="todo-table">
+            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                In Progress
+            </p>
+        </div>
+        <div class="todo-table">
+            <p class="text-center text-xl mt-4 border-b-2 mb-4 border-black">
+                Done
+            </p>
+        </div>
+        </div>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
             integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
