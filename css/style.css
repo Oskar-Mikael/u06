@@ -1,5 +1,6 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(245, 245, 245);
 }
 
 .container {
@@ -10,11 +11,108 @@ body {
 .todo-table {
     min-height: 30rem;
     background-color: rgb(214, 214, 214);
-    max-width: 20rem;
+    max-width: 20rem;   
+}
+
+#todo > div {
+    background-color: rgb(151, 151, 255);
+}
+
+#doing > div {
+    background-color: rgb(255, 248, 151);
+}
+
+#done > div {
+    background-color: rgb(131, 255, 100);
 }
 
 .grid {
     grid-column-gap: 1rem;
+}
+
+.draggable {
+    margin-bottom: 1rem;
+    
+}
+
+.draggable > p {
+    text-align: center;
+}
+
+.draggable > h3 {
+    font-weight: bold;
+}
+
+.plus1 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.plus2 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.plus3 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.plus4 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.plus5 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.plus6 {
+    cursor: pointer;
+    float: right;
+    margin-right: 1rem;
+}
+
+.item-info1 {
+    display: none;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.item-info2 {
+    display: none;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.item-info3 {
+    display: none;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.item-info4 {
+    display: none;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.item-info5 {
+    display: none;
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.item-info6 {
+    display: none; 
+    background-color: rgb(179, 179, 179);
+    text-align: center;
 }
 
 
