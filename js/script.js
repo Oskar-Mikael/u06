@@ -16,6 +16,12 @@ $('.item-info1').dialog({
     }
 })
 
+$('#date1').datepicker();
+
+$( () => { 
+    $('#tabs1').tabs();
+    })
+
 $('.plus1').on('click', () => {
     $('.item-info1').dialog("open");
 })
@@ -34,6 +40,12 @@ $('.item-info2').dialog({
    
 })
 
+$('#date2').datepicker();
+
+$( () => { 
+    $('#tabs2').tabs();
+    })
+
 $('.plus2').on('click', () => {
     $('.item-info2').dialog("open");
 })
@@ -50,6 +62,12 @@ $('.item-info3').dialog({
         duration: 500,
     }
 })
+
+$('#date3').datepicker();
+
+$( () => { 
+    $('#tabs3').tabs();
+    })
 
 $('.plus3').on('click', () => {
     $('.item-info3').dialog("open");
@@ -71,6 +89,11 @@ $('.plus4').on('click', () => {
     $('.item-info4').dialog("open");
 })
 
+$('#date4').datepicker();
+
+$( () => { 
+    $('#tabs4').tabs();
+    })
 
 
 $('.item-info5').dialog({
@@ -84,12 +107,15 @@ $('.item-info5').dialog({
     }
 })
 
+$('#date5').datepicker();
+
+$( () => { 
+    $('#tabs5').tabs();
+    })
+
 $('.plus5').on('click', () => {
     $('.item-info5').dialog("open");
 })
-
-$('item-info5').tabs();
-
 
 
 $('.item-info6').dialog({
@@ -103,6 +129,12 @@ $('.item-info6').dialog({
     }
 })
 
+$('#date6').datepicker();
+
+$( () => { 
+    $('#tabs6').tabs();
+    })
+
 $('.plus6').on('click', () => {
     $('.item-info6').dialog("open");
 })
@@ -110,6 +142,8 @@ $('.plus6').on('click', () => {
 $('.spoiler').on('click', () => {
     $('.spoiler-text').toggle();
 })
+
+
 
 
 
